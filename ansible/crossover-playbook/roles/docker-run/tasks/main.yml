@@ -1,0 +1,7 @@
+---
+# This handler for dockerr rol, will install docker
+- name: Start Apache2 Container
+  command: docker run -d -p 80:80 abendezub/apache2
+
+- name: Start MySQL container
+  command: docker run -d -p 3306:3306 abendezub/mysql

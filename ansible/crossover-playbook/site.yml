@@ -1,0 +1,10 @@
+---
+# Crossover project ansible playbook
+
+- name: Playbook to achieve Crossover Project
+  hosts: all
+  remote_user: root
+
+  roles:
+    - docker
+    - docker-run
