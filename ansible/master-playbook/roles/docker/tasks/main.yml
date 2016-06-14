@@ -1,0 +1,11 @@
+---
+# This handler for docker rol, will install docker
+- name: Install docker
+  yum: name={{ item }} state=latest
+  with_items:
+    - docker
+    - docker-registry
+    - python-docker-py
+
+- name: start and enable docker
+  service: name=docker state=started enabled=yes

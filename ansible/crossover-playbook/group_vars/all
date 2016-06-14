@@ -1,9 +1,0 @@
-mysqlservice: mysqld
-mysql_port: 3306
-dbuser: u_icinga2
-dbname: icinga2
-dbpassword: icinga2pwd
-webdbuser: web_u_icinga2
-webdbname: icingaweb2
-webdbpassword: webicinga2pwd
-mysql_root_password: Omegared1

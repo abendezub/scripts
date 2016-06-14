@@ -1,9 +1,0 @@
----
-
-#Handlers for MySQL/MariaDB
-
-- name: restart mariadb
-  service: name=mariadb state=restarted
-
-- name: restart icinga2
-  service: name=icinga2 state=restarted

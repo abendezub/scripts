@@ -1,0 +1,9 @@
+# Variables for MySQL Role
+mysqlservice: mysqld
+mysql_port: 3306
+mysql_dbuser: u_icinga2
+mysql_dbname: icinga2
+mysql_dbpassword: icinga2pwd
+mysql_root_password: Omegared1
+
+# Variables for Docker

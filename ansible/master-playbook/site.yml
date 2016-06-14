@@ -1,7 +1,7 @@
 ---
 # Crossover project ansible playbook
 
-- name: Playbook to achieve Crossover Project
+- name: Master Playbook
   hosts: all
   remote_user: root
 

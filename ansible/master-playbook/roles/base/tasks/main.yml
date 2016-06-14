@@ -10,16 +10,13 @@
 - name: Copy epel repo file
   template: src=epel.repo dest=/etc/yum.repos.d/epel.repo
 
-- name: Copy icinga repo file
-  template: src=icinga.repo dest=/etc/yum.repos.d/icinga.repo
-
 - name: Restart server before yum Update
   command: shutdown -r now "Ansible - Yum Update"
   async: 0
   poll: 0
   ignore_errors: true
 
-- name: Wait for server. 
+- name: Wait for server.
   local_action:
       module: wait_for
         host=192.168.122.10

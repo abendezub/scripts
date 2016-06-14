@@ -7,11 +7,10 @@ LABEL Version=2.4.6-31
 RUN yum -y install epel-release
 # RUN yum -y update && yum clean all
 RUN yum -y install httpd && yum clean all
-RUN yum -y install nrpe nagios-plugins-users nagios-plugins-load nagios-plugins-swap nagios-plugins-disk nagios-plugins-procs
 
 EXPOSE 80
 
-# Simple startup script to avoid some issues observed with container restart 
+# Simple startup script to avoid some issues observed with container restart
 ADD run-httpd.sh /run-httpd.sh
 RUN chmod -v +x /run-httpd.sh
 
